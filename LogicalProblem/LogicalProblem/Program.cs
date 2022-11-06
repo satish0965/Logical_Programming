@@ -13,6 +13,8 @@ namespace LogicalProblem
             Console.WriteLine("Welocme to Logical Problems");
             Console.WriteLine("1 for Fibonacci Series Problem");
             Console.WriteLine("2 for Perfect Number Problem");
+            Console.WriteLine("3 for Prime Number Problem");
+
 
 
             int Problem = Convert.ToInt32(Console.ReadLine());
@@ -25,6 +27,10 @@ namespace LogicalProblem
                 case 2:
                     PerfectNumberProblems perfectNumberProblems = new PerfectNumberProblems();
                     perfectNumberProblems.PerfectNumber();
+                    break;
+                case 3:
+                    ProbPrimeNumber prob = new ProbPrimeNumber();
+                    prob.PrimeNumbers();
                     break;
 
             }
